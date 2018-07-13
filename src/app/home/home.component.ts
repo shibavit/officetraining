@@ -7,6 +7,7 @@ import { ItemsService } from '../items.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+ 
 
   x: any;
   constructor(private item:ItemsService) { }
@@ -26,7 +27,7 @@ add(i) {
   else {
    this.addition = this.addition - i.price * i.qty;
    i.text = "Add to cart";  
-  
+   i.qty = 0;
   }
  
 }

@@ -11,19 +11,19 @@ export class ItemsService {
   items = [ {
     id:"item1",
     price:20,
-    qty:1,
+    qty:0,
     text : "Add to cart"
 },
 {
   id:"item2",
   price:30,
-  qty:2,
+  qty:0,
   text : "Add to cart"
 },
 {
   id:"item3",
   price:10,
-  qty:3,
+  qty:0,
   text : "Add to cart"
 }
 ];

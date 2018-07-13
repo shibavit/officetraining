@@ -1,16 +1,15 @@
-<p>
-  home works!
-</p>
 
 <div *ngFor = "let x of itemget; let i=index"> 
        
-  {{x.id}}
-  {{x.price}}
-  {{x.qty}}
-  
+Item ID : <a routerLink="home/single/{{x.id}}">{{x.id}}</a> <br>
+Price :  {{x.price}}<br>
+Quantity :  <input type="number" [(ngModel)]='x.qty'>
+
     <button type="button" (click)='add(x)'>   {{x.text}} </button>
   
- 
+    <br><br>
+    <app-single [itemid] = "x.id" [itemprice] = "x.price"> </app-single>
 </div>
 
-{{addition}}
+<b>Total : </b> {{addition}}
+
